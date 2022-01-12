@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>TONENING</title>
+  <title>django搭建API测试工具 | TONENING</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="#django搭建API测试工具##需求分析1、API测试工具2、总共分为四个页面：发送请求页、保存请求页、请求类型页、帮助文档页3、发送请求页可以命名为API测试通过输入请求地址、请求类型、请求头信息、以及必要的参数、发送后会将返回结果在对应的区域显示4、保存请求页命名为已存测试用来保存一些必要内容，或者会多次使用的接口内容5、请求类型页面是对请求类型的一个展示及操作页面帮助文档是对系统的一个介">
+  <meta name="description" content="##需求分析1、API测试工具2、总共分为四个页面：发送请求页、保存请求页、请求类型页、帮助文档页3、发送请求页可以命名为API测试通过输入请求地址、请求类型、请求头信息、以及必要的参数、发送后会将返回结果在对应的区域显示4、保存请求页命名为已存测试用来保存一些必要内容，或者会多次使用的接口内容5、请求类型页面是对请求类型的一个展示及操作页面帮助文档是对系统的一个介绍##API测试页面介绍一个接口">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TONENING">
+<meta property="og:title" content="django搭建API测试工具">
 <meta property="og:url" content="http://example.com/2022/01/12/django%E5%88%9B%E5%BB%BAAPI%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/index.html">
 <meta property="og:site_name" content="TONENING">
-<meta property="og:description" content="#django搭建API测试工具##需求分析1、API测试工具2、总共分为四个页面：发送请求页、保存请求页、请求类型页、帮助文档页3、发送请求页可以命名为API测试通过输入请求地址、请求类型、请求头信息、以及必要的参数、发送后会将返回结果在对应的区域显示4、保存请求页命名为已存测试用来保存一些必要内容，或者会多次使用的接口内容5、请求类型页面是对请求类型的一个展示及操作页面帮助文档是对系统的一个介">
+<meta property="og:description" content="##需求分析1、API测试工具2、总共分为四个页面：发送请求页、保存请求页、请求类型页、帮助文档页3、发送请求页可以命名为API测试通过输入请求地址、请求类型、请求头信息、以及必要的参数、发送后会将返回结果在对应的区域显示4、保存请求页命名为已存测试用来保存一些必要内容，或者会多次使用的接口内容5、请求类型页面是对请求类型的一个展示及操作页面帮助文档是对系统的一个介绍##API测试页面介绍一个接口">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-12T12:07:26.430Z">
-<meta property="article:modified_time" content="2022-01-12T12:31:15.804Z">
+<meta property="article:modified_time" content="2022-01-12T12:35:44.521Z">
 <meta property="article:author" content="TONENING">
 <meta name="twitter:card" content="summary">
   
@@ -83,14 +83,24 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      django搭建API测试工具
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>#django搭建API测试工具<br>##需求分析<br>1、API测试工具<br>2、总共分为四个页面：发送请求页、保存请求页、请求类型页、帮助文档页<br>3、发送请求页可以命名为<strong>API测试</strong>通过输入请求地址、请求类型、请求头信息、以及必要的参数、发送后会将返回结果在对应的区域显示<br>4、保存请求页命名为<strong>已存测试</strong>用来保存一些必要内容，或者会多次使用的接口内容<br>5、<strong>请求类型</strong>页面是对请求类型的一个展示及操作页面<br><strong>帮助文档</strong>是对系统的一个介绍<br>##API测试页面介绍<br>一个接口测试应该包括以下内容：<br>+请求类型：<code>下拉框形式</code><br>+请求地址： <code>输入框</code><br>+请求参数： <code>只有当请求类型是post时才显示，json格式输入框</code><br>+请求头信息<br>+返回数据： <code>默认为空</code><br>+返回请求头： <code>默认为空</code><br>+返回状态码<br>除了这些必要字段外，API测试页面还应该有两个按钮，<strong>发送请求</strong>和<strong>保存请求</strong>按钮<br>+发送请求：<code>点击发送，将测试结果展示出来 将返回的数据填入到响应数据处、返回头信息填入到响应头信息处，返回状态码填入到状态码处</code><br>+保存请求：<code>点击保存提示输入保存名，确认框包含一个保存一个取消，点击保存会保存到数据库，并前端显示，点击取消，数据不会保存</code></p>
+        <p>##需求分析<br>1、API测试工具<br>2、总共分为四个页面：发送请求页、保存请求页、请求类型页、帮助文档页<br>3、发送请求页可以命名为<strong>API测试</strong>通过输入请求地址、请求类型、请求头信息、以及必要的参数、发送后会将返回结果在对应的区域显示<br>4、保存请求页命名为<strong>已存测试</strong>用来保存一些必要内容，或者会多次使用的接口内容<br>5、<strong>请求类型</strong>页面是对请求类型的一个展示及操作页面<br><strong>帮助文档</strong>是对系统的一个介绍<br>##API测试页面介绍<br>一个接口测试应该包括以下内容：<br>+请求类型：<code>下拉框形式</code><br>+请求地址： <code>输入框</code><br>+请求参数： <code>只有当请求类型是post时才显示，json格式输入框</code><br>+请求头信息<br>+返回数据： <code>默认为空</code><br>+返回请求头： <code>默认为空</code><br>+返回状态码<br>除了这些必要字段外，API测试页面还应该有两个按钮，<strong>发送请求</strong>和<strong>保存请求</strong>按钮<br>+发送请求：<code>点击发送，将测试结果展示出来 将返回的数据填入到响应数据处、返回头信息填入到响应头信息处，返回状态码填入到状态码处</code><br>+保存请求：<code>点击保存提示输入保存名，确认框包含一个保存一个取消，点击保存会保存到数据库，并前端显示，点击取消，数据不会保存</code></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/12/django%E5%88%9B%E5%BB%BAAPI%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/" data-id="ckybiv6fa0000yguh4uly678c" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/01/12/django%E5%88%9B%E5%BB%BAAPI%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/" data-id="ckybiv6fa0000yguh4uly678c" data-title="django搭建API测试工具" class="article-share-link">Share</a>
       
       
       
@@ -141,7 +151,7 @@
       <ul>
         
           <li>
-            <a href="/2022/01/12/django%E5%88%9B%E5%BB%BAAPI%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">(no title)</a>
+            <a href="/2022/01/12/django%E5%88%9B%E5%BB%BAAPI%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">django搭建API测试工具</a>
           </li>
         
           <li>
